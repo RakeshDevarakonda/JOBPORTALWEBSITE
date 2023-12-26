@@ -266,10 +266,9 @@ if (isset($_SESSION['userid'])) {
     }
 
 
-
-
-
-
+    .veiwinapplication:after {
+        width: 0px !important;
+    }
 
     .postedjobs,
     .applications {

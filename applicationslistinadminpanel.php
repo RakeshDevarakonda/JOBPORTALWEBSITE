@@ -87,7 +87,7 @@
                                 <td>' . $name . '</td>
                                 <td>' . $email . '</td>
                                 <td>' . $number . '</td>
-                                <td><a target="_blank" href="./resume/' . $resume . '">Veiw</a></td>
+                                <td><a class="veiwinapplication" target="_blank" href="./resume/' . $resume . '" style="color:blue; text-decoration:underline; ">Veiw</a></td>
 
 
 
