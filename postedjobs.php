@@ -311,7 +311,7 @@ require "navbar.php";
     <div class="adminpanel  w-100 d-flex flex-row flex-wrap justify-content-sm-center mt-5 ">
 
         <div class="top-panel d-flex flex-row   justify-content-center   ">
-            <div class="postedjobs bg-warning      d-flex flex-column ">
+            <div class="postedjobs postedjobsclick bg-warning      d-flex flex-column ">
 
                 <p class="w-100 text-center " style="font-size:10vh;">
                     <?php
@@ -320,7 +320,7 @@ require "navbar.php";
                 </p>
                 <p class="w-100 text-center">Posted Jobs </p>
             </div>
-            <div class="applications bg-warning  d-flex flex-column ">
+            <div class="applications applicationsclick bg-warning  d-flex flex-column ">
                 <p class="text-center" style="font-size:10vh;">
                     <?php
                     echo $counting;
@@ -413,7 +413,6 @@ require "navbar.php";
 var application = document.querySelector(".changetoapplication")
 var postedjobs = document.querySelector(".changetopostedjobs")
 
-// application.click()
 
 document.addEventListener("DOMContentLoaded", function() {
     postedjobs.click()
@@ -422,6 +421,55 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+var contentContainer = document.querySelector('.gettingdata');
+
+
+
+
+
+
+document.querySelector(".applicationsclick").addEventListener("click", () => {
+
+    fetch('applicationslistinadminpanel.php ')
+        .then(response => response.text())
+        .then(content => {
+            contentContainer.innerHTML = content;
+        })
+        .catch(error => console.error('Error loading content:', error));
+
+
+    application.style.textDecoration = "underline";
+    application.style.color = "#0087ca"
+
+    postedjobs.style.textDecoration = "none";
+    postedjobs.style.color = "black"
+
+
+})
+
+
+
+
+
+
+document.querySelector(".postedjobsclick").addEventListener("click", () => {
+
+    fetch('postedjobsinadminpanel.php ')
+        .then(response => response.text())
+        .then(content => {
+            contentContainer.innerHTML = content;
+        })
+        .catch(error => console.error('Error loading content:', error));
+
+    postedjobs.style.textDecoration = "underline";
+
+    postedjobs.style.color = "#0087ca"
+
+    application.style.textDecoration = "none";
+    application.style.color = "black"
+
+
+})
 
 
 
