@@ -190,7 +190,7 @@ tr:nth-child(even) {
 
 
 
-    <div
+    <div style="overflow-x:auto"
         class="totaldata  w-100 d-flex justify-content-md-center flex-column align-items-center justify-content-start mb-5">
         <h5 class="text-center appliedjobsh5 ">Applied Jobs</h5>
 
