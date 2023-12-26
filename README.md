@@ -10,10 +10,10 @@ Navigate to htdocs:
 
 Open the XAMPP installation directory and locate the "htdocs" folder.
 
-<img src="./otherimages/image1.png"  width="500" height="600">
-<img src="./otherimages/image2.png"  width="500" height="600">
-<img src="./otherimages/image3.png"  width="500" height="600">
-<img src="./otherimages/image4.png"  width="500" height="600">
+<img src="./otherimages/image1.png" height="300">
+<img src="./otherimages/image2.png" height="300">
+<img src="./otherimages/image3.png" height="300">
+<img src="./otherimages/image4.png" height="300">
 
 Open your web browser and go to http://localhost/foldername/index.php.
 
