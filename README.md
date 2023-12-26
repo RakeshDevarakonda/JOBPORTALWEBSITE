@@ -1,4 +1,8 @@
 Job Portal Management System
+
+
+some images:- 
+
 <img src="./otherimages/image1.png" height="300">
 <img src="./otherimages/image2.png" height="300">
 <img src="./otherimages/image3.png" height="300">

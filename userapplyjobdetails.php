@@ -79,6 +79,7 @@ label {
 }
 
 input {
+
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
