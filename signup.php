@@ -274,7 +274,7 @@ require "navbar.php";
                  <label for="confirm-password">Confirm Password:</label>
                  <input type="password" id="confirm-password" name="signup_confirm_password" required>
 
-                 <button type="submit" class="signup signupbutton">Sign Up</button>
+                 <button type="submit" class="mt-3 signup signupbutton">Sign Up</button>
 
 
                  <?php

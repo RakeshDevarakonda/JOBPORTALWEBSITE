@@ -617,6 +617,10 @@ function loadContent() {
 
 loadContent()
 </script>
+
+
+<script src="./scripts/navbar.js"></script>
+
 </body>
 
 </html>

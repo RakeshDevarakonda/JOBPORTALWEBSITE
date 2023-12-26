@@ -469,6 +469,9 @@ require "navbar.php";
     </script>
 
     <script src="./scripts/postjobs.js"></script>
+
+    <script src="./scripts/navbar.js"></script>
+
 </body>
 
 </html>
