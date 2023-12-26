@@ -1,0 +1,228 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+nav {
+  position: fixed !important;
+  height: 100px;
+  z-index: 12;
+  background-color: aliceblue;
+  top: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+
+@media screen and (min-width:768px) {
+
+  
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .logodiv {
+    width: 100% !important;
+  }
+
+  .logoimg {
+    height: 60px !important;
+  }
+
+  .fa-xmark{
+    margin-right: 30px !important;
+  }
+
+
+
+  .hamburgerli{
+    margin-right: 20px !important;
+    display: flex !important;
+  }
+
+
+  .middlecontent{
+    width: 100% !important;
+  }
+
+.middlecontent li{
+  margin: 10px 20px !important;
+}
+
+  .lastcontent{
+    width: 100% !important;
+    align-items: start !important;
+
+  }
+
+  .lastcontent li{
+  margin: 10px 20px !important;
+
+
+  }
+  
+
+
+
+
+  .homeandother {
+    position: absolute;
+    left: -1000px;
+
+    z-index: 1;
+    transition: all 0.5s linear;
+
+    width: 50vw !important;
+    height: 100vh;
+
+    top: -3px;
+  }
+
+  nav {
+    height: 80px;
+  }
+
+  .responsivenav {
+    position: absolute;
+    left: 0;
+    justify-content: start !important;
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+
+
+
+@media screen and (max-width:576px) {
+
+  .homeandother{
+    width: 100% !important;
+  }
+  
+}
+
+a {
+  color: black;
+}
+
+a {
+  position: relative;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #0087ca;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+
+  transform-origin: bottom left;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.postajobbtn:hover {
+  background-color: aliceblue !important;
+}
+
+.postajobbtn a{
+  color: white  ;
+}
+
+.postajobbtn:hover>a{
+  color: rgb(0, 0, 0) !important;
+}
+
+.postajobbtn a:hover::after {
+  width: 0px !important;
+}
+
+.logoutbtn:hover {
+  color: white !important;
+  background-color: #0d6efd;
+}
+
+.logoutbtn:hover > a {
+  color: white !important;
+  /* background-color: rgb(18, 141, 223); */
+}
+
+.register:hover {
+  color: white !important;
+  background-color: #0d6efd;
+}
+
+.register:hover > a {
+  color: white !important;
+  /* background-color: rgb(18, 141, 223); */
+}
+
+.register a:hover::after {
+  width: 0px !important;
+}
+
+.logoutbtn a:hover::after {
+  width: 0px !important;
+}
+
+.logoimg {
+  max-width: 100%;
+}
+
+.imganchor::after {
+  width: 0px !important;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.logodiv {
+  width: 12% ;
+}
+
+.homeandother {
+  width: 88%;
+}
+
+@media screen and (max-width: 768px) {
+  /* .logodiv {
+    width: 100% !important;
+  }
+
+  .logoimg {
+    height: 50px;
+  } */
+}
+
+

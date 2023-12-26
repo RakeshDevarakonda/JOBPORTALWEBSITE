@@ -1,0 +1,95 @@
+body {
+  font-family: 'Montserrat';
+
+  background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 992px) {
+  .joblist {
+    width: 90% !important;
+    margin: 10px 0px;
+    border: 0.1px solid #bdbdbd;
+    border-radius: 10px;
+    
+  }
+}
+
+@media screen and (max-width:576px) {
+  
+.joblist{
+  width: 100% !important;
+  margin: 10px 0px !important;
+}
+
+.logoinindex{
+  margin-left: 0px !important;
+}
+}
+
+.entirecontent {
+  width: 100vw;
+  height: auto;
+  width: 100vw;
+  height: auto;
+  margin-top: 100px;
+}
+
+.joblist {
+  width: 45%;
+  margin: 10px 0px;
+  border: 0.1px solid #ecedf2;
+  border-radius: 10px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+  
+
+  cursor: pointer;
+}
+
+.name:hover{
+  color: blue;
+}
+
+
+
+.veiwallandbookmark {
+  width: 100%;
+}
+
+
+
+.logoinindex img{
+  height: 40px;
+}
+ .fa-layer-group{
+font-size: 30px;
+margin-top: 5px;
+} 
+
+.location , .companyname{
+  font-size: 15px !important;
+}
+
+.key{
+    background-color: rgba(25,103,210,.15);
+}
+
+.salaryinfind {
+      background-color: #c7e1cf;
+}
+
+.timeinfind{
+    background-color: rgba(249,171,0,.15);
+}
+
+.veiwdetails{
+  /* background-color: #b4cee5; */
+  border: 1px solid rgb(99, 99, 99);
+}
+
+.joblist:hover {
+  background-color: aliceblue !important;
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+

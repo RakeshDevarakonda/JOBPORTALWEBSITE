@@ -1,0 +1,167 @@
+@media screen and (max-width: 992px) {
+  .formdata {
+    /* padding: 10px; */
+    width: 100vw;
+  }
+
+  .form {
+    width: 100% !important;
+  }
+
+  .submitbutton {
+    width: 70% !important;
+    padding: 10px;
+  }
+ 
+}
+
+@media screen and (max-width: 576px) {
+
+
+  .form {
+    width: 100% !important;
+  }
+
+  .formtable {
+    padding: 0px !important;
+  }
+
+  .formtable input {
+    width: 100% !important;
+  }
+
+  .subcompanyinfo,
+  .jobinformation {
+    width: 100% !important;
+  }
+
+
+  .subcompanyinfo .formtable,
+  .jobinformation .formtable {
+    width: 100% !important;
+    margin: 10px;
+  }
+
+  .submitbutton {
+    width: 100% !important;
+    padding: 10px;
+  }
+
+
+}
+
+
+.formdata {
+  background-color: #f4f4f4;
+  width: 100vw;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.form {
+  width: 70%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea,
+input {
+  border: 1px solid #ccc !important;
+}
+
+input[type="file"] {
+  height: 30px !important;
+}
+
+.jobinfo,
+.comanyinfo {
+  width: 100%;
+}
+
+.form .formtable {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.formtable input,
+.formtable select {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.salaryinput{
+  width: 40%;
+  margin-right: 10px;
+}
+
+textarea {
+  height: 20vh !important;
+}
+
+.job-type,
+.shifttype,
+.perksandbenifits {
+  height: auto;
+  min-width: 15vh;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(235, 234, 229);
+}
+
+.submitbutton {
+  width: 70%;
+  padding: 10px;
+}
+
+.submitbutton:hover{
+  background-color: transparent !important;
+  color: black;
+  border: 1px solid blue !important;
+}
+
+.fa-solid {
+  margin-left: 5px;
+}
+
+.multiplecheckers1,
+.multiplecheckers2,
+.multiplecheckers3 {
+  cursor: pointer;
+}
+
+.displayskills {
+  height: auto;
+  width: auto;
+}
+
+.displayskills li {
+    cursor: pointer;
+  height: auto;
+  min-width: 15vh;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(107, 194, 225)
+}
+
+
+.formdata form{
+  margin-top: 150px;
+}
+
+body {
+  font-family: 'Montserrat';
+
+}
+
+
+input{
+  border: 1px solid #ccc !important;
+}
