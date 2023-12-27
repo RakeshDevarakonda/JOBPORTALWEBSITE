@@ -233,7 +233,7 @@
 
                     <?php if (isset($gotperksandbenifits)): ?>
                     <div class="perksandbenfinoverveiw divmaintag">
-                        <h5>perks andh5benifits</h5>
+                        <h5>perks and benifits</h5>
                         <?php foreach ($gotperksandbenifits as $key): ?>
                         <button class="border border-1"><?php echo $key; ?></button>
                         <?php endforeach; ?>
