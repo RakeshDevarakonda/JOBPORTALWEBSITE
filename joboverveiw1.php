@@ -461,6 +461,7 @@ require "navbar.php";
     </script>
 
     <script src="./scripts/joboverveiw.js"></script>
+    <script src="./scripts/navbar.js"></script>
 
 </body>
 
