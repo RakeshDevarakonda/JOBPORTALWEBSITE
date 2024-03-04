@@ -5,13 +5,6 @@
 
 require "./connectosql/connecttosql.php";
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
-require 'phpmailer/src/SMTP.php';
 
 
 $showalert1 = true;
@@ -52,45 +45,49 @@ if (isset($_POST['submitmail'])) {
         $updateCodeQuery = "UPDATE everyuserdetail SET resetcode='$resetCode' WHERE email='$email' ";
         $conn->query($updateCodeQuery);
 
-        $mail = new PHPMailer(true);
 
         try {
-            $mail->SMTPDebug = false;
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'rakeshdevarakonda2000@gmail.com';      //Your Gmail Id
-            $mail->Password = 'izbcziasskpefvkc';      //Your App password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
 
-            //Recipients
-            $mail->setFrom('rakeshdevarakonda2000@gmail.com', 'Reset Password');
-            $mail->addAddress($email);
+            include('smtp/PHPMailerAutoload.php');
 
-            // $mail->addReplyTo('rakeshdevarakonda2000@gmail.com', 'Reset Password23');
+            function smtp_mailer($to, $subject, $msg)
+            {
+                $mail = new PHPMailer();
+                $mail->IsSMTP();
+                $mail->SMTPAuth = true;
+                $mail->SMTPSecure = 'tls';
+                $mail->Host = "smtp.gmail.com";
+                $mail->Port = 587;
+                $mail->IsHTML(true);
+                $mail->CharSet = 'UTF-8';
+                //$mail->SMTPDebug = 2; 
+                $mail->Username = "rakeshdevarakonda2000@gmail.com";
+                $mail->Password = "qqvpaevlezhzbvxz";
+                $mail->SetFrom("rakeshdevarakonda2000@gmail.com");
+                $mail->Subject = $subject;
+                $mail->Body = "Your Reset Code is -" . $msg;
+                $mail->AddAddress($to);
+                $mail->SMTPOptions = array(
+                    'ssl' => array(
+                        'verify_peer' => false,
+                        'verify_peer_name' => false,
+                        'allow_self_signed' => false
+                    )
+                );
+                if (!$mail->Send()) {
+                    echo $mail->ErrorInfo;
+                } else {
+                    header("Location:otp.php");
+                    return 'Sent';
+                }
+            }
+
+            
+
+            echo smtp_mailer($email, 'Reset Password', $resetCode);
 
 
-            //Attachments
-            // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-            // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
-            //Content
-            $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Reset Password';
-            $mail->Body = 'Yor Reset Password Code is - ' . $resetCode;
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-            $mail->send();
-
-
-
-
-
-            header("Location:otp.php");
-
-
-            echo 'Message has been sent';
 
 
 
