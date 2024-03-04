@@ -486,9 +486,9 @@ session_start();
     <?php
 
 
-require "navbar.php";
+    require "navbar.php";
 
-?>
+    ?>
 
 
 
@@ -750,10 +750,10 @@ require "navbar.php";
             // print_r($combinedArray);
         
 
-            $i=0;
-            while (($row = $result1->fetch_assoc()) && $i<=5) {
+            $i = 0;
+            while (($row = $result1->fetch_assoc()) && $i <= 5) {
 
-                $i=$i+1;
+                $i = $i + 1;
 
                 $gottitle = $row["jobtitle"];
                 $gotcompanyname = $row["companyname"];
@@ -842,7 +842,7 @@ require "navbar.php";
         <div class="jobopenings milliondesign2 p-2  d-flex justify-content-center align-items-center flex-column ">
 
             <h5>8M+</h5>
-            <p>Jon Openings</p>
+            <p>Job Openings</p>
         </div>
         <div class="applingjob milliondesign2 p-2  d-flex justify-content-center align-items-center flex-column ">
 
@@ -883,13 +883,11 @@ require "navbar.php";
 
 
     <?php
-        
-        require "./footer.html";
-        
-        
-        ?>
+
+    require "./footer.html";
 
 
+    ?>
 
 
 
@@ -905,6 +903,12 @@ require "navbar.php";
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
     </script>
+
+
+    <script src="./scripts/index.js">
+    </script>
+    <script src="./scripts/navbar.js"></script>
+
 
 
     <script>

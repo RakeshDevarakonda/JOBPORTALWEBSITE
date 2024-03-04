@@ -46,9 +46,9 @@
     <?php
 
 
-require "navbar.php";
+    require "navbar.php";
 
-?>
+    ?>
 
 
 
@@ -93,19 +93,18 @@ require "navbar.php";
                     $gotmoneytype = $row["moneytype"];
                     $perannum = $row["perannum"];
 
-                    $logo=$row["logo"];
+                    $logo = $row["logo"];
 
 
-                    
 
-                     if ($gotmoneytype=="lakhs"){
-                       $flag="LPA";
-                     }
-                     else{
-                        $flag="T";
-                     }
 
-                    
+                    if ($gotmoneytype == "lakhs") {
+                        $flag = "LPA";
+                    } else {
+                        $flag = "T";
+                    }
+
+
 
 
 
@@ -116,7 +115,7 @@ require "navbar.php";
 
 
                     $currentDate = new DateTime(); // Assuming "20-12-2023" is in the format "dd-mm-yyyy"
-
+            
                     $interval = $currentDate->diff($postedDate);
 
 
@@ -140,7 +139,7 @@ require "navbar.php";
 
                         $gotjobtype = json_decode($row["jobtype"]);
 
-       
+
                     }
 
 
@@ -165,10 +164,10 @@ require "navbar.php";
 
 
     <?php
-    
+
     require "./footer.html";
-    
-    
+
+
     ?>
 
 

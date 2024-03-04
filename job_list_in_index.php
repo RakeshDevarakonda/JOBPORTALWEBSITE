@@ -49,25 +49,24 @@
 
             <div class="jobtype d-flex flex-row flex-wrap justify-content-start ">
                 <?php
-            
-            $x = 0;
-           foreach ($gotjobtype as $key){
-               $x = $x + 1;
-            
-               if ($x == 1) {
 
-                echo '
+                $x = 0;
+                foreach ($gotjobtype as $key) {
+                    $x = $x + 1;
+
+                    if ($x == 1) {
+
+                        echo '
                 <div class="me-1 border border-1 key mb-2 rounded-pill d-flex justify-content-center p-1" style="width: auto;">
                 <p class="ms-2 me-2 mb-0 ">' . $key . ' </p>
         </div>
         ';
-        }
-        else {
-        break;
-        }
-        }
+                    } else {
+                        break;
+                    }
+                }
 
-        ?>
+                ?>
 
 
                 <div class="me-1 border border-1 timeinfind  mb-2 rounded-pill d-flex justify-content-center p-1"

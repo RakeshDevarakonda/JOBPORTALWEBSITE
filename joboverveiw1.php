@@ -276,9 +276,9 @@
     <?php
 
 
-require "navbar.php";
+    require "navbar.php";
 
-?>
+    ?>
 
 
 
@@ -300,7 +300,7 @@ require "navbar.php";
 
     $okk2 = "SELECT * FROM recruiterpostedjobs WHERE jobid=$jobidinjoboverveiw ";
 
-    
+
 
     $myresult = mysqli_query($conn, $okk2);
 
@@ -429,7 +429,7 @@ require "navbar.php";
 
 
         require "joboverveiw2.php";
-
+    
         $gotjobtype = [];
     }
 
@@ -448,9 +448,9 @@ require "navbar.php";
     ?>
 
 
-    <?php 
+    <?php
     require "./footer.html"
-    ?>
+        ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
