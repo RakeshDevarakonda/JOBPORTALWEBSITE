@@ -17,7 +17,7 @@ Navigate to htdocs:
 
 Open the XAMPP installation directory and locate the "htdocs" folder.
 
-Open your web browser and go to "http://localhost/foldername/index.php".
+Open your web browser and go to "http://job-portal.free.nf/index.php".
 
 Overview
 Welcome to the Job Portal Management System, a web application developed to streamline the job posting and application process. This system is designed to be user-friendly and efficient, providing features for both job seekers and employers. The technologies used in this project include HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.
