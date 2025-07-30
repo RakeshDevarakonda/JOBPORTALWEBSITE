@@ -1,8 +1,5 @@
 Job Portal Management System
 
-Live Demo "https://job-portal.free.nf/index.php".
-
-
 
 some images:-
 
